@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-commerce Website</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp"
+      rel="stylesheet">
+  </head>
+  <body>    
+    <section id="header">
+      <a href="#"><img src="images/logozaraa.png" class="logo" /></a>
+      <div>
+        <ul id="navbar">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <div class="dark-mode">
+            <span class="material-icons-sharp active_light">
+                light_mode
+            </span>
+            <span class="material-icons-sharp deactive_light">
+                dark_mode
+            </span>
+            
+        </div>
+          <li>
+            <a  class="active" href="cart.html"
+              ><span class="material-icons-sharp"> shopping_cart </span></a
+            >
+          </li>
+          <li>
+            <a href="login.html"><span class="material-icons-sharp account" >account_circle
+              </span></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+
+    <section id="page-header" class="about-header">
+      <h2>Add to Cart!</h2>
+      <p>Thank you for shopping!!</p>
+    </section>
+
+    <section id="cart" class="section-p1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>Image</td>
+                    <td>Product</td>
+                    <td>Price</td>
+                    <td>Quantity</td>
+                    <td>SubTotal</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href=""><span class="material-icons-sharp">
+                        remove_circle
+                        </span>
+                    </a>
+                    </td>
+                    <td><img src="images/Products/f1.jpg" alt=""></td>
+                    <td>T Shirt Astronaut</td>
+                    <td>$118</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$118</td>
+                </tr>
+                <tr>
+                    <td><a href=""><span class="material-icons-sharp">
+                        remove_circle
+                        </span>
+                    </a>
+                    </td>
+                    <td><img src="images/Products/f2.jpg" alt=""></td>
+                    <td>T Shirt </td>
+                    <td>$141</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$141</td>
+                </tr>
+                <tr>
+                    <td><a href=""><span class="material-icons-sharp">
+                        remove_circle
+                        </span>
+                    </a>
+                    </td>
+                    <td><img src="images/Products/f3.jpg" alt=""></td>
+                    <td>T Shirt </td>
+                    <td>$112</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$112</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="cart-add" class="section-p1">
+        <div id="coupon">   
+            <h3>Apply Coupon</h3>
+            <div>
+                <input type="text" placeholder="Enter your Coupon">
+                <button>Apply</button>
+            </div>
+        </div>
+        <div id="subttotal">
+            <h3>Cart Total</h3>
+            <table>
+                <tr>
+                    <td>Cart Sub Total</td>
+                    <td>$ 335</td>
+                </tr>
+                <tr>
+                    <td>Shipping</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td><strong>Total</strong></td>
+                    <td><strong>$ 335</strong></td>
+                </tr>
+
+            </table>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+      <div class="col">
+        <img src="images/logozaraa.png" alt="">
+        <h4>Contact</h4>
+        <p><strong>Address:-</strong> COEP</p>
+        <p><strong>Hours:-</strong> 8:30 AM to 5:30 PM, Mon to Sat</p>
+        <p><strong>Phone No:-</strong> 5678912345</p>
+
+      </div>
+
+      <div class="col">
+        <h4>About</h4>
+        <a href="#">About Us</a>
+        <a href="#">Delivery Information</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms and Conditions</a>
+        <a href="#">Contact Us</a>
+        
+      </div>
+      <div class="col">
+        <h4>My Account</h4>
+        <a href="#">Sign In</a>
+        <a href="#">View Cart</a>
+        <a href="#">My Wishlist</a>
+        <a href="#">Track my Order</a>
+        <a href="#">Help</a>
+        
+      </div>
+
+    </footer>
+    <script>
+        let button = document.getElementById("SUBMIT");
+        button.addEventListener("click", (event)=>{
+            window.alert("Your feedback has been submitted!");
+        })
+    </script>
+    <script src="script.js"></script>
+    
+  </body>
+</html>
